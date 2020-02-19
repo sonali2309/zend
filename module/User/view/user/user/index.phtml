@@ -1,0 +1,13 @@
+<table class = "table"> 
+   <tr> 
+      <th>Username</th> 
+      <th>Password</th> 
+      <th> </th> 
+   </tr> 
+   <?php foreach ($data as $sampledata) : ?> 
+   <tr> 
+      <td><?php echo $this->escapeHtml($sampledata->username);?></td>  
+      <td><?php echo $this->escapeHtml($sampledata->password);?></td> 
+   </tr> 
+   <?php endforeach ?> 
+</table>
